@@ -4,7 +4,7 @@ uniform vec2 uUvScale;
 varying vec2 vUv;
 varying vec3 vWorldPosition;
 
-float luminance(vec3 color) {
+float getLuminance(vec3 color) {
   return dot(color, vec3(0.299, 0.587, 0.114));
 }
 
@@ -16,7 +16,7 @@ void main() {
     uv + vWorldPosition.xy * 0.05
   );
 
-  float grayscale = luminance(textureColor.rgb);
+  float grayscale = getLuminance(textureColor.rgb);
   float distanceFromCenter = length(vWorldPosition.xy);
 
   float threshold = smoothstep(
