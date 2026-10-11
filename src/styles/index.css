@@ -21,14 +21,14 @@ body,
 
 html {
   overflow: hidden;
-  background: #000;
+  background: #fff;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   overflow: hidden;
-  background: #000;
+  background: #fff;
   font-family: var(--font-poppins);
   overscroll-behavior: none;
 }

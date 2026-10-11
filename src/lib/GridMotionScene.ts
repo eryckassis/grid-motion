@@ -7,7 +7,7 @@ const CARD = {
   height: 1.3,
   rows: 3,
   columns: 6,
-  gap: 0.1,
+  gap: 0.05,
 } as const
 
 function setCoveredTextureScale(texture: THREE.Texture, aspect: number, target: THREE.Vector2) {

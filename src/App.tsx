@@ -3,7 +3,7 @@ import { MouseFollower } from './components/MouseFollower'
 
 export function App() {
   return (
-    <main className="relative h-dvh w-full overflow-hidden bg-black">
+    <main className="relative h-dvh w-full overflow-hidden bg-white">
       <GridMotion />
 
       <a
@@ -16,7 +16,7 @@ export function App() {
           focus-visible:ring-2
           focus-visible:ring-white/70
           focus-visible:ring-offset-4
-          focus-visible:ring-offset-black
+          focus-visible:ring-offset-white
           md:text-[15px]
           "
       ></a>
